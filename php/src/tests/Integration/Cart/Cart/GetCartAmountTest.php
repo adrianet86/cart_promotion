@@ -20,19 +20,19 @@ class GetCartAmountTest extends WebTestCase
         $this->client = static::createClient();
     }
 
-    public function test_when_id_is_not_valid_uuid_it_responses_bad_request()
+    public function test_when_id_is_not_valid_uuid_it_responses_bad_request(): void
     {
         $this->client->request('GET', sprintf(self::URI, 'invalid_uuid'));
         $this->assertResponseStatusCodeSame(Response::HTTP_BAD_REQUEST);
     }
 
-    public function test_when_cart_not_exist_it_responses_not_found()
+    public function test_when_cart_not_exist_it_responses_not_found(): void
     {
         $this->client->request('GET', sprintf(self::URI, RamseyUuid::uuid4()->toString()));
         $this->assertResponseStatusCodeSame(Response::HTTP_NOT_FOUND);
     }
 
-    public function test_when_response_is_ok_it_has_expected_json_structure()
+    public function test_when_response_is_ok_it_has_expected_json_structure(): void
     {
         $cartId = RamseyUuid::uuid4()->toString();
         $this->client->request(

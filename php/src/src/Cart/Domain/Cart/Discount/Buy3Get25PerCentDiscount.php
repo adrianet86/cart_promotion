@@ -30,7 +30,6 @@ class Buy3Get25PerCentDiscount extends DiscountAbstract implements Discount
         return new Money(
             $price,
             $totalAmount->currency()
-
         );
     }
 }

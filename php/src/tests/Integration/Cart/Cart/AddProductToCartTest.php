@@ -19,7 +19,7 @@ class AddProductToCartTest extends WebTestCase
         $this->client = static::createClient();
     }
 
-    public function test_when_id_is_not_valid_uuid_it_responses_bad_request()
+    public function test_when_id_is_not_valid_uuid_it_responses_bad_request(): void
     {
         $this->client->request(
             'POST',
@@ -29,7 +29,7 @@ class AddProductToCartTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_BAD_REQUEST);
     }
 
-    public function test_when_cart_not_exists_it_responses_not_found()
+    public function test_when_cart_not_exists_it_responses_not_found(): void
     {
         $this->client->request(
             'POST',
@@ -39,7 +39,7 @@ class AddProductToCartTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_NOT_FOUND);
     }
 
-    public function test_when_product_is_added_to_existing_cart_it_responses_created_code()
+    public function test_when_product_is_added_to_existing_cart_it_responses_created_code(): void
     {
         $cartId = RamseyUuid::uuid4()->toString();
         $this->client->request(
@@ -61,7 +61,7 @@ class AddProductToCartTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_CREATED);
     }
 
-    public function test_when_product_not_exists_it_responses_not_found_code()
+    public function test_when_product_not_exists_it_responses_not_found_code(): void
     {
         $cartId = RamseyUuid::uuid4()->toString();
         $this->client->request(

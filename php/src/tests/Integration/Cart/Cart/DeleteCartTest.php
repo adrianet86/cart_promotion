@@ -19,19 +19,19 @@ class DeleteCartTest extends WebTestCase
         $this->client = static::createClient();
     }
 
-    public function test_when_cart_not_exists_it_responses_not_found_code()
+    public function test_when_cart_not_exists_it_responses_not_found_code(): void
     {
         $this->client->request('DELETE', sprintf(self::URI, RamseyUuid::uuid4()->toString()));
         $this->assertResponseStatusCodeSame(Response::HTTP_NOT_FOUND);
     }
 
-    public function test_when_id_is_not_valid_uuid_it_responses_bad_request()
+    public function test_when_id_is_not_valid_uuid_it_responses_bad_request(): void
     {
         $this->client->request('DELETE', sprintf(self::URI, 'invalid_uuid'));
         $this->assertResponseStatusCodeSame(Response::HTTP_BAD_REQUEST);
     }
 
-    public function test_when_cart_is_deleted_it_responses_no_content()
+    public function test_when_cart_is_deleted_it_responses_no_content(): void
     {
         $cartId = Uuid::uuid4()->toString();
 

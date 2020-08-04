@@ -18,7 +18,7 @@ class CreateNewCartTest extends WebTestCase
         $this->client = static::createClient();
     }
 
-    public function test_when_id_is_not_valid_uuid_it_responses_bad_request()
+    public function test_when_id_is_not_valid_uuid_it_responses_bad_request(): void
     {
         $this->client->request(
             'POST',
@@ -34,7 +34,7 @@ class CreateNewCartTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_BAD_REQUEST);
     }
 
-    public function test_when_new_cart_is_created_it_responses_created_code()
+    public function test_when_new_cart_is_created_it_responses_created_code(): void
     {
         $this->client->request(
             'POST',

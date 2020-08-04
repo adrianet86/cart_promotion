@@ -15,7 +15,7 @@ class CartTest extends TestCase
 {
     const CURRENCY = 'EUR';
 
-    public function test_add_one_product_works()
+    public function test_add_one_product_works(): void
     {
         $product = $this->createMock(Product::class);
         $cart = new Cart(new Uuid(RamseyUuid::uuid4()->toString()));
@@ -25,7 +25,7 @@ class CartTest extends TestCase
         $this->assertEquals(1, $cart->totalProducts());
     }
 
-    public function test_add_same_product_increases_units()
+    public function test_add_same_product_increases_units(): void
     {
         $product = new Product('code', 'name', new Money(1000, self::CURRENCY));
 
@@ -41,7 +41,7 @@ class CartTest extends TestCase
         $this->assertEquals($totalUnits, $productItem->units());
     }
 
-    public function test_add_many_different_products_works()
+    public function test_add_many_different_products_works(): void
     {
         $cart = new Cart(new Uuid(RamseyUuid::uuid4()->toString()));
         $cart->addProduct($product = new Product('code', 'name', new Money(1000, self::CURRENCY)));

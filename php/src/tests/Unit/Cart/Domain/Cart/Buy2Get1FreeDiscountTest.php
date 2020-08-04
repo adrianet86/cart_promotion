@@ -41,7 +41,7 @@ class Buy2Get1FreeDiscountTest extends TestCase
         $this->assertTrue($totalAmount->isEquals($expectedPrice));
     }
 
-    public function test_buy_four_get_one_free(): void
+    public function test_buy_four_get_two_free(): void
     {
         $code = 'code';
         $priceAmount = 1000;
