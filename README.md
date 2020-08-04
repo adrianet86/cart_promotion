@@ -1,4 +1,5 @@
-# Shopping cart API  
+# Shopping cart promotion API
+Cart Api with different discounts based on business rules.  
   
 ### Requirements  
 * Docker  
@@ -61,17 +62,17 @@
     }'
 
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/865336b4-63ac-47fd-af56-1af9175caa5e/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/865336b4-63ac-47fd-af56-1af9175caa5e/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/865336b4-63ac-47fd-af56-1af9175caa5e/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/865336b4-63ac-47fd-af56-1af9175caa5e/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add MUG
-    curl --location --request POST 'http://127.0.0.1:8080/cart/865336b4-63ac-47fd-af56-1af9175caa5e/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/865336b4-63ac-47fd-af56-1af9175caa5e/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
@@ -94,17 +95,17 @@
     }'
 
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/81a34f78-6584-4e1a-8d7e-a89ca5377a0b/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/81a34f78-6584-4e1a-8d7e-a89ca5377a0b/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/81a34f78-6584-4e1a-8d7e-a89ca5377a0b/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/81a34f78-6584-4e1a-8d7e-a89ca5377a0b/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/81a34f78-6584-4e1a-8d7e-a89ca5377a0b/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/81a34f78-6584-4e1a-8d7e-a89ca5377a0b/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
         
@@ -126,27 +127,27 @@
     }'
 
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/e3f71cbb-8fc6-48eb-ae9b-bc0c1f55bb77/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
             
@@ -168,37 +169,37 @@
     }'
 
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
 
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add PEN
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/PEN' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/PEN' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
       
     # Add MUG
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/MUG' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/MUG' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
     
     # Add TSHIRT
-    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product-seller/TSHIRT' \
+    curl --location --request POST 'http://127.0.0.1:8080/cart/da9e9386-1abd-41a0-8be1-8383bd0ee34d/product/TSHIRT' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json'
             
