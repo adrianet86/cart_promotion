@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace App\Cart\Domain\Cart;
 
 use App\Cart\Domain\Product\Product;
+use App\Cart\Domain\Product\ProductItem;
 use App\Cart\Domain\Uuid;
 
 class Cart

@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace App\Cart\Domain\Cart;
 
+use App\Cart\Domain\Product\ProductItem;
+
 class CartAmountCalculator
 {
     private const DEFAULT_CURRENCY = 'EUR';

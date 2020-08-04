@@ -8,7 +8,7 @@ use App\Cart\Domain\Cart\Cart;
 use App\Cart\Domain\Cart\CartAmountCalculator;
 use App\Cart\Domain\Cart\Discount\DiscountAbstract;
 use App\Cart\Domain\Cart\Money;
-use App\Cart\Domain\Cart\ProductItem;
+use App\Cart\Domain\Product\ProductItem;
 use App\Cart\Domain\Product\Product;
 use App\Cart\Domain\Uuid;
 use PHPUnit\Framework\TestCase;

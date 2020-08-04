@@ -6,7 +6,7 @@ namespace App\Tests\Unit\Cart\Domain\Cart;
 
 use App\Cart\Domain\Cart\Discount\Buy3Get25PerCentDiscount;
 use App\Cart\Domain\Cart\Money;
-use App\Cart\Domain\Cart\ProductItem;
+use App\Cart\Domain\Product\ProductItem;
 use App\Cart\Domain\Product\Product;
 use PHPUnit\Framework\TestCase;
 

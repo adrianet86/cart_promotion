@@ -2,9 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace App\Cart\Domain\Cart;
+namespace App\Cart\Domain\Product;
 
-use App\Cart\Domain\Product\Product;
+use App\Cart\Domain\Cart\InvalidUnitsException;
+use App\Cart\Domain\Cart\Money;
 
 class ProductItem
 {
