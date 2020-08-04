@@ -1,0 +1,24 @@
+system_ready_get:
+  path: /system/ready
+  methods: GET
+  controller: App\Cart\Infrastructure\Api\System\ReadyGetController
+
+cart_post:
+  path: /cart
+  methods: POST
+  controller: App\Cart\Infrastructure\Api\Cart\PostCartController
+
+cart_delete:
+  path: /cart/{id}
+  methods: DELETE
+  controller: App\Cart\Infrastructure\Api\Cart\DeleteCartController
+
+cart_post_product:
+  path: /cart/{id}/product/{code}
+  methods: POST
+  controller: App\Cart\Infrastructure\Api\Cart\PostProductToCartController
+
+cart_get_total_amount:
+  path: /cart/{id}/amount
+  methods: GET
+  controller: App\Cart\Infrastructure\Api\Cart\GetCartAmountController
